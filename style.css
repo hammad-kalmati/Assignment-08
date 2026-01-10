@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+header {
+    height: 100px;
+    background-color: #F85606;
+    padding: 3px 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 11px;
+    color: white;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #FFE1D2;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: left;
+    justify-content: space-between;
+    align-items: center;
+    min-width: none;
+    max-width: 900px;
+    width: 100%;
+    height: 70px;
+    margin-top: 5px;
+}
+
+.logo img {
+    height: 40px;
+    cursor: pointer;
+}
+
+.search-field-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    min-width: none;
+    max-width: 700px;
+    width: 100%;
+}
+
+.search-field {
+    width: 100%;
+    position: relative;
+}
+
+.search-field input {
+    width: 100%;
+    height: 45px;
+    border-radius: 2px;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    outline: none;
+    padding-left: 17px;
+}
+
+.search-field svg {
+    position: absolute;
+    top: 0.1px;
+    right: 0px;
+    height: 45px;
+    border: 1px solid #FFE1D2;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    color: #F85606;
+    padding: 11px;
+    background-color: #FFE1D2;
+    cursor: pointer;
+}
+
+.shop-btn svg {
+    cursor: pointer;
+}
+
+.ads-container {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.ad-1 {
+    min-width: none;
+    max-width: 900px;
+}
+
+.ad-1 img {
+    height: auto;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.daraz-app-container {
+    height: 313px;
+    background-color: #FFE9DC;
+    width: 200px;
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.inline {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo-2 img {
+    height: 60px;
+    mix-blend-mode: multiply;
+}
+
+.txt {
+    color: #6C1D00;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.txt:hover {
+    color: #F85606;
+}
+
+.for-coloumn {
+    display: flex;
+    gap: 3.3px;
+    align-items: center;
+    box-sizing: border-box;
+    border: 5px solid #F85606;
+    cursor: inherit;
+    background-color: #F85606;
+}
+
+.ad-2 {
+    height: 92px;
+}
+
+.download-ad {
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.app-store {
+    display: flex;
+    flex-direction: column;
+}
+
+.para-1 {
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.para-1:hover {
+    color: #F85606;
+}
+
+.animation img {
+    cursor: pointer;
+    display: block;
+    justify-self: center;
+    margin-bottom: 15px;
+}
+
+.flash-section {
+    color: #424242;
+    font-size: 22px;
+    margin-left: 20.5px;
+}
+
+.sale-header {
+    background: #fff;
+    margin: 6px 20px 3px 20px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sale-header h3 {
+    color: #ff6a00;
+    font-weight: 500;
+}
+
+.sale-header button {
+    border: 1px solid #ff6a00;
+    background: transparent;
+    color: #ff6a00;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.daraz-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2px;
+    padding: 0 20px 30px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.title {
+    font-size: 13px;
+    margin: 8px 0;
+    line-height: 1.3;
+    height: 34px;
+    overflow: hidden;
+}
+
+.price {
+    color: #ff6a00;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.old-price {
+    display: flex;
+    gap: 6px;
+    font-size: 12px;
+}
+
+.old-price span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.old-price em {
+    color: #000;
+    font-style: normal;
+}
+
+.categories-section {
+    color: #424242;
+    font-size: 22px;
+    margin-left: 20.5px;
+    margin-bottom: 6px;
+}
+
+.container-16-cards {
+    display: grid;
+    gap: 1px;
+    height: 300px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 20px;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    background-color: white;
+    padding: 18px 10px 8px 10px;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+.card1 img {
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+}
+
+.card1:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card1 p {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+
+@media (max-width: 600px) {
+    header nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 8px;
+    }
+
+    .logo-container {
+        margin-top: 5px;
+    }
+
+    .logo img {
+        height: 32px;
+    }
+
+    .search-field input {
+        height: 32px;
+        font-size: 11px;
+        padding-left: 10px;
+    }
+
+    .search-field svg {
+        height: 32px;
+        padding: 8px;
+    }
+
+    .shop-btn svg {
+        height: px;
+    }
+
+}
+
+
+@media (max-width: 1100px) {
+    .ads-container {
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .daraz-app-container {
+        width: 86%;
+        align-items: center;
+    }
+}
+
+@media(max-width:1200px) {
+    .daraz-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .container-16-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .animation img {
+        display: none;
+    }
+}
+
+@media(max-width:768px) {
+    .daraz-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-16-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width:480px) {
+    .daraz-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container-16-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:300px) {
+    .container-16-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sale-header {
+        padding: 15px 15px;
+    }
+
+    .sale-header h3 {
+        font-size: 15px;
+    }
+
+    .sale-header button {
+        padding: 8px 10px;
+    }
+}
+
+@media(max-width:260px) {
+    .daraz-app-container {
+        width: 200px;
+        box-sizing: border-box;
+    }
+}
