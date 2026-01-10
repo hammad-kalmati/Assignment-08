@@ -412,7 +412,13 @@ nav a:hover {
 
 @media(max-width:260px) {
     .daraz-app-container {
-        width: 200px;
-        box-sizing: border-box;
+        display: none;
+    }
+}
+
+@media(max-width:200px) {
+    .sale-header {
+        flex-direction: column;
+        gap: 7px;
     }
 }
