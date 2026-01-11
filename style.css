@@ -227,7 +227,8 @@ nav a:hover {
 }
 
 .card:hover {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 3px 3px silver,
+        -1px 0 3px silver;
 }
 
 .card img {
@@ -276,7 +277,7 @@ nav a:hover {
 .container-16-cards {
     display: grid;
     gap: 1px;
-    height: 300px;
+    min-height: auto;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(2, 1fr);
     margin: 0 20px;
@@ -300,12 +301,77 @@ nav a:hover {
 }
 
 .card1:hover {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 3px 3px silver,
+        -1px 0 3px silver;
 }
 
 .card1 p {
     font-size: 14px;
     line-height: 17px;
+}
+
+.just-for-you-section {
+    color: #424242;
+    font-size: 22px;
+    margin-left: 20.5px;
+    margin-bottom: 6px;
+    margin-top: 25px;
+}
+
+
+.bottom-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    min-height: auto;
+    margin: 0 20px;
+    column-gap: 10px;
+    row-gap: 17px;
+}
+
+.card2 {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.card2:hover {
+    box-shadow: 1px 3px 3px silver,
+        -1px 0 3px silver;
+}
+
+.card2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.title2 {
+    font-size: 13px;
+    margin: 8px 0;
+    line-height: 1.3;
+    height: 34px;
+    overflow: hidden;
+}
+
+.old-price2 {
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+    align-items: center;
+}
+
+.old-price2 span {
+    color: #ff6a00;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.old-price2 em {
+    color: #000;
+    font-style: normal;
 }
 
 
@@ -370,6 +436,10 @@ nav a:hover {
     .animation img {
         display: none;
     }
+
+    .bottom-cards {   
+        grid-template-columns: repeat(4, 1fr); 
+    }
 }
 
 @media(max-width:768px) {
@@ -380,6 +450,10 @@ nav a:hover {
     .container-16-cards {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .bottom-cards {   
+        grid-template-columns: repeat(2, 1fr); 
+    }
 }
 
 @media(max-width:480px) {
@@ -389,6 +463,10 @@ nav a:hover {
 
     .container-16-cards {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bottom-cards {   
+        grid-template-columns: repeat(1, 1fr); 
     }
 }
 
