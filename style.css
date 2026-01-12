@@ -374,6 +374,27 @@ nav a:hover {
     font-style: normal;
 }
 
+.stars-container {
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.stars {
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.stars img {
+    height: 12px;
+}
+
+.stars span {
+    color: gray;
+    font-size: 11px;
+}
 
 @media (max-width: 600px) {
     header nav {
@@ -437,8 +458,8 @@ nav a:hover {
         display: none;
     }
 
-    .bottom-cards {   
-        grid-template-columns: repeat(4, 1fr); 
+    .bottom-cards {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -451,8 +472,8 @@ nav a:hover {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .bottom-cards {   
-        grid-template-columns: repeat(2, 1fr); 
+    .bottom-cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -465,8 +486,8 @@ nav a:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .bottom-cards {   
-        grid-template-columns: repeat(1, 1fr); 
+    .bottom-cards {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
