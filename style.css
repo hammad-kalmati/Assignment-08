@@ -131,7 +131,6 @@ nav a:hover {
 
 .logo-2 img {
     height: 60px;
-    mix-blend-mode: multiply;
 }
 
 .txt {
@@ -405,6 +404,7 @@ footer {
     align-items: center;
     background-color: white;
     padding: 10px 21px;
+    margin-top: 20px;
 }
 
 .icons-container {
@@ -589,7 +589,7 @@ footer {
         flex-wrap: wrap;
     }
 
-    .social-box {
+    .social-icons {
         flex-wrap: wrap;
     }
 }
@@ -607,6 +607,20 @@ footer {
 
     .bottom-cards {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .message-icon {
+        right: 10px;
+    }
+
+    .message-icon img {
+        left: 12px;
+        height: 17px;
+    }
+
+    .message-icon button {
+        padding: 8px 20px 8px 32px;
+        font-size: 12px;
     }
 }
 
@@ -631,6 +645,32 @@ footer {
 @media(max-width:260px) {
     .daraz-app-container {
         display: none;
+    }
+
+    .logo-container {
+        height: 50px;
+    }
+
+    .logo img {
+        height: 27px;
+    }
+
+    .search-field-container {
+        gap: 20px;
+    }
+
+    .search-field input {
+        height: 30px;
+        padding-left: 17px;
+    }
+
+    .search-field svg {
+        height: 30px;
+        padding: 7px;
+    }
+
+    .shop-btn svg {
+        height: 27px;
     }
 }
 
