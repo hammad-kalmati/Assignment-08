@@ -396,6 +396,102 @@ nav a:hover {
     font-size: 11px;
 }
 
+.lead-button {
+    border: 1px solid #1A9CB8;
+    color: #1A9CB8;
+    height: 45px;
+    width: 33%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    cursor: pointer;
+    margin: 40px 0px 40px 0px;
+}
+
+.everything-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 85%;
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.texts .customer-care {
+    font-weight: bold;
+    color: #0F136D;
+    margin-bottom: 12px;
+}
+
+.details p {
+    color: #0F136D;
+    font-size: 12.5px;
+    line-height: 20px;
+}
+
+.details p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.texts-2 .daraz {
+    font-weight: bold;
+    color: #0F136D;
+    margin-bottom: 12px;
+}
+
+.daraz-details p {
+    color: #0F136D;
+    font-size: 12.5px;
+    line-height: 20px;
+}
+
+.daraz-details p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.both-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.happy-shoping-container {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+
+.happy-shoping-container img {
+    height: 50px;
+}
+
+.happy-box {
+    flex-direction: column;
+    line-height: 20px;
+}
+
+.happy-box p {
+    color: #F85606;
+}
+
+.happy-box span p {
+    color: #0F136D;
+    font-size: 14px;
+}
+
+.google-play {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+    cursor: pointer;
+}
+
 footer {
     min-height: 130px;
     max-height: 600px;
@@ -567,6 +663,21 @@ footer {
     }
 }
 
+@media(max-width:810px) {
+    .everything-section {
+        justify-self: center;
+        width: 100%;
+    }
+
+    .both-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+}
+
 @media(max-width:768px) {
     .daraz-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -594,7 +705,26 @@ footer {
     }
 }
 
+@media(max-width:550px) {
+    .everything-section {
+        width: 80%;
+        flex-wrap: wrap;
+    }
 
+    .both-box {
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media(max-width:510px) {
+    .everything-section {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
 
 @media(max-width:480px) {
     .daraz-grid {
@@ -622,6 +752,11 @@ footer {
         padding: 8px 20px 8px 32px;
         font-size: 12px;
     }
+
+    .lead-button {
+        height: 30px;
+        font-size: 11px;
+    }
 }
 
 @media(max-width:300px) {
@@ -639,6 +774,10 @@ footer {
 
     .sale-header button {
         padding: 8px 10px;
+    }
+
+    .both-box {
+        flex-direction: column;
     }
 }
 
@@ -678,5 +817,10 @@ footer {
     .sale-header {
         flex-direction: column;
         gap: 7px;
+    }
+
+    .lead-button {
+        height: 25px;
+        font-size: 8px;
     }
 }
